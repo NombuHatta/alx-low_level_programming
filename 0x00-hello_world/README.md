@@ -1,0 +1,1 @@
+Learning about C as a language, getting to know who invented C. Knowing how to use gcc, what is an entry point, what is main, how to print text using printf , puts and putchar, Using the unary operator sizeof, how to check your code with betty-style, how to find the right header.
