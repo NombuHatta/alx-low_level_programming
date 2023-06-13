@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 
-	s = (char*)malloc(size * sizeof(char));
+	s = (char *)malloc(size * sizeof(char));
 	if (s == NULL)
 		return (NULL);
 
