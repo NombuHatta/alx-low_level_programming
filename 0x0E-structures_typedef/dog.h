@@ -1,9 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
 
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
-
 /**
  * struct dog - Dogs information
  * @name: Pointer to the name of the dog
@@ -19,9 +16,17 @@ struct dog
 	char *owner;
 };
 
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 /**
- * dog_t - typedef for struct dog
+ * dog_t -typedef for struct dog
+ * @name: New dog's name
+ * @age: New dog's age
+ * @owner: New dog's owner
+ *
+ * Return: Always 0 (Success)
  */
-
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
 #endif
