@@ -1,1 +1,0 @@
- Learning C variadic functions.
