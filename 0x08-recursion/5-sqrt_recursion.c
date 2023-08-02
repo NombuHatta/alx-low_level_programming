@@ -36,5 +36,5 @@ int calculate_sqrt(int n, int x)
 	{
 		return (-1);
 	}
-	return (calculate_sqrt(n, x +1));
+	return (calculate_sqrt(n, x + 1));
 }
