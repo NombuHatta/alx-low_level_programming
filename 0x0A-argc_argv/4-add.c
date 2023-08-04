@@ -5,7 +5,7 @@
 
 /**
  * main - Prints added positive numbers from an argument
- * @argv: Argument count
+ * @argc: Argument count
  * @argv: Argument vector
  *
  * Return: Always 0 (Success)
