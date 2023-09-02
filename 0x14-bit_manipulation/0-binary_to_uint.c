@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * binary_to_unit - Converts a binary number to unit
+ * binary_to_uint - Converts a binary number to unit
  * @b: The binery
  *
  * Return: The converted number or 0
