@@ -4,7 +4,7 @@
 /**
  * set_bit - sets the value of a bit at given index
  * @n: A pointer to an unsigned int
- * #index: The index of the bit to set
+ * @index: The index of the bit to set
  *
  * Return: 1 if it worked or -1 if an error occured
  */
