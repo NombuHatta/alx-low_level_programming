@@ -5,6 +5,7 @@
 #include <elf.h>
 #include <sys/types.h>
 #include <string.h>
+#include "main.h"
 
 /**
  * print_error - Pint an error message
