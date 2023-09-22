@@ -11,7 +11,7 @@
  * print_error - Pint an error message
  * @msg: The error message to display
  */
-void print_error(const char *msg)
+void print_error_message(const char *msg)
 {
 	write(STDERR_FILENO, msg, strlen(msg));
 	exit(98);
@@ -61,20 +61,20 @@ int main(int argc, char *argv[])
 	Elf64_Ehdr header;
 
 	if (argc != 2)
-		print_error("Usage: elf_header elf_filename");
+		print_error_message("Usage: elf_header elf_filename");
 
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
-		print_error("Error: Unable to open file");
+		print_error_message("Error: Unable to open file");
 
 	if (read(fd, &header, sizeof(header)) != sizeof(header))
-		print_error("Error: Unable to read ELF header");
+		print_error_message("Error: Unable to read ELF header");
 
 	if (header.e_ident[EI_MAG0] != ELFMAG0 ||
 	header.e_ident[EI_MAG1] != ELFMAG1 ||
 	header.e_ident[EI_MAG2] != ELFMAG2 ||
 	header.e_ident[EI_MAG3] != ELFMAG3)
-		print_error("Error: Not an ELF file");
+		print_error_message("Error: Not an ELF file");
 
 	printf("ELF Header:\n");
 	print_elf_header(&header);
